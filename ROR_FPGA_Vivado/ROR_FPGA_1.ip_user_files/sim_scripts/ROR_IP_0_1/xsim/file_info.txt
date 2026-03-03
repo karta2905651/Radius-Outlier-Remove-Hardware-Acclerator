@@ -1,0 +1,5 @@
+ROR_IP_slave_stream_v1_0_S00_AXIS.v,verilog,xil_defaultlib,../../../../ROR_FPGA_1.gen/sources_1/ip/ROR_IP_0_1/hdl/ROR_IP_slave_stream_v1_0_S00_AXIS.v,incdir="../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef"
+ROR_IP_master_stream_v1_0_M00_AXIS.v,verilog,xil_defaultlib,../../../../ROR_FPGA_1.gen/sources_1/ip/ROR_IP_0_1/hdl/ROR_IP_master_stream_v1_0_M00_AXIS.v,incdir="../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef"
+ROR_IP.v,verilog,xil_defaultlib,../../../../ROR_FPGA_1.gen/sources_1/ip/ROR_IP_0_1/hdl/ROR_IP.v,incdir="../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef"
+ROR_IP_0.v,verilog,xil_defaultlib,../../../../ROR_FPGA_1.gen/sources_1/ip/ROR_IP_0_1/sim/ROR_IP_0.v,incdir="../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef"
+glbl.v,Verilog,xil_defaultlib,glbl.v

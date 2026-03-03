@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="507"></ZoomStartTime>
+      <ZoomEndTime time="524"></ZoomEndTime>
+      <Cursor1Time time="511"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="126"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="ROR_design_i/ROR_IP_0/inst/addr_a" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ROR_design_i/ROR_IP_0/inst/addr_a[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_a[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="ROR_design_i/ROR_IP_0/inst/we_a" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ROR_design_i/ROR_IP_0/inst/we_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">we_a[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="ROR_design_i/ROR_IP_0/inst/din_a" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ROR_design_i/ROR_IP_0/inst/din_a[127:0]</obj_property>
+      <obj_property name="ObjectShortName">din_a[127:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="ROR_design_i/axi_dma_0_M_AXI_SG_ARBURST" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ROR_design_i/axi_dma_0_M_AXI_SG_ARBURST[0:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_dma_0_M_AXI_SG_ARBURST[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="ROR_design_i/axi_dma_0_M_AXI_MM2S_ARBURST" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ROR_design_i/axi_dma_0_M_AXI_MM2S_ARBURST[0:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_dma_0_M_AXI_MM2S_ARBURST[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="ROR_design_i/axi_dma_0_M_AXI_S2MM_AWBURST" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ROR_design_i/axi_dma_0_M_AXI_S2MM_AWBURST[0:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_dma_0_M_AXI_S2MM_AWBURST[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.ip_user_files/bd/ROR_design/ip/ROR_design_axi_dma_0_0/sim/ROR_design_axi_dma_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ROR_design_axi_dma_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.ip_user_files/bd/ROR_design/ip/ROR_design_axi_smc_0/bd_0/ip/ip_1/sim/bd_c225_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_c225_psr_aclk_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.ip_user_files/bd/ROR_design/ip/ROR_design_rst_ps7_0_100M_0/sim/ROR_design_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ROR_design_rst_ps7_0_100M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.ip_user_files/bd/ROR_design/ip/ROR_design_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_3b23_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_3b23_psr_aclk_0'

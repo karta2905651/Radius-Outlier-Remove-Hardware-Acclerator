@@ -1,0 +1,418 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L axi_datamover_v5_1_37 -L axi_sg_v4_1_21 -L axi_dma_v7_1_36 -L xlconstant_v1_1_10 -L proc_sys_reset_v5_0_17 -L smartconnect_v1_0 -L axi_register_slice_v2_1_35 -L xlconcat_v2_1_7 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ROR_design_wrapper_behav xil_defaultlib.ROR_design_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 16 for port 'IRQ_F2P' [C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.ip_user_files/bd/ROR_design/ip/ROR_design_processing_system7_0_0/sim/ROR_design_processing_system7_0_0.v:671]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2025.1_0530_0145/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_23_axi_gp.v:208]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5546]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5564]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2025.1_0530_0145/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_23_axi_gp.v:292]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2025.1_0530_0145/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_23_axi_hp.v:80]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2025.1_0530_0145/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_23_axi_hp.v:89]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10256]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10274]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10275]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2025.1_0530_0145/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_23_axi_hp.v:165]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2025.1_0530_0145/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_23_axi_hp.v:174]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2025.1_0530_0145/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_23_axi_hp.v:251]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2025.1_0530_0145/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_23_axi_hp.v:260]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2025.1_0530_0145/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_23_axi_hp.v:337]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2025.1_0530_0145/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_23_axi_hp.v:346]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_bid' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7157]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_rid' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7175]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7176]
+WARNING: [VRFC 10-5021] port 'mm2s_prmry_reset_out_n' is not connected on this instance [C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.ip_user_files/bd/ROR_design/sim/ROR_design.v:253]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.ip_user_files/bd/ROR_design/sim/ROR_design.v:505]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.ip_user_files/bd/ROR_design/ip/ROR_design_axi_smc_0/bd_0/sim/bd_c225.v:692]
+WARNING: [VRFC 10-5021] port 'ENET0_GMII_RXD' is not connected on this instance [C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.ip_user_files/bd/ROR_design/ip/ROR_design_processing_system7_0_0/sim/ROR_design_processing_system7_0_0.v:283]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ocm_gp0' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4372]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_gp0' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4373]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ocm_gp1' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4394]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_gp1' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4395]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_hp0' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4465]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_hp1' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4483]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_hp2' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4501]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_hp3' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4519]
+WARNING: [VRFC 10-3129] assignment to input 'ddr_wr_qos' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:1253]
+WARNING: [VRFC 10-3129] assignment to input 'ddr_rd_qos' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:1276]
+WARNING: [VRFC 10-3129] assignment to input 'ddr_wr_qos' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:1091]
+WARNING: [VRFC 10-3129] assignment to input 'ddr_rd_qos' [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:1115]
+WARNING: [VRFC 10-3027] 'ocm_wr_strb_port0' was previously declared with a different range [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:3809]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.ip_user_files/bd/ROR_design/ip/ROR_design_smartconnect_0_0/bd_0/sim/bd_3b23.v:1336]
+WARNING: [VRFC 10-3705] select index 64 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6134]
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10898]
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7772]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7985]
+WARNING: [VRFC 10-3705] select index 4 into 'ar_cnt' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8124]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_rresp_cnt' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8221]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_wr_ptr' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8240]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_cnt' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8381]
+WARNING: [VRFC 10-3705] select index 4 into 'rresp_time_cnt' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8386]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8391]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 1. Module DN doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 1. Module DN doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/karta/桌面/ROR_Unit.v" Line 636. Module Distance_cal_cell doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package unisim.vcomponents
+Compiling package axi_dma_v7_1_36.axi_dma_pkg
+Compiling package xpm.vcomponents
+Compiling package axi_sg_v4_1_21.axi_sg_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package axi_datamover_v5_1_37.axi_datamover_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package smartconnect_v1_0.sc_util_v1_0_4_pkg
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling module xil_defaultlib.Distance_cal_cell
+Compiling module xil_defaultlib.DN
+Compiling module xil_defaultlib.ROR_IP_default
+Compiling module xil_defaultlib.ROR_design_ROR_IP_0_4
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_updt_sm [\axi_sg_updt_sm(c_m_axi_sg_addr_...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_updt_cmdsts_if [\axi_sg_updt_cmdsts_if(c_m_axi_s...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_updt_mngr [\axi_sg_updt_mngr(c_m_axi_sg_add...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_updt_queue [\axi_sg_updt_queue(c_m_axi_sg_ad...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_updt_q_mngr [\axi_sg_updt_q_mngr(c_m_axi_sg_a...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_intrpt [axi_sg_intrpt_default]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_ftch_sm [\axi_sg_ftch_sm(c_m_axi_sg_addr_...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_ftch_pntr [\axi_sg_ftch_pntr(c_m_axi_sg_add...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_ftch_cmdsts_if [\axi_sg_ftch_cmdsts_if(c_m_axi_s...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_ftch_mngr [\axi_sg_ftch_mngr(c_m_axi_sg_add...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_ftch_queue [\axi_sg_ftch_queue(c_m_axi_sg_ad...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_ftch_q_mngr [\axi_sg_ftch_q_mngr(c_m_axi_sg_a...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_reset [axi_sg_reset_default]
+Compiling architecture imp of entity axi_sg_v4_1_21.axi_sg_fifo [\axi_sg_fifo(c_dwidth=100,c_dept...]
+Compiling architecture imp of entity axi_sg_v4_1_21.axi_sg_fifo [\axi_sg_fifo(c_dwidth=8,c_depth=...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_cmd_status [\axi_sg_cmd_status(c_addr_width=...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_rd_status_cntl [axi_sg_rd_status_cntl_default]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_scc [\axi_sg_scc(c_sel_addr_width=2,c...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_addr_cntl [\axi_sg_addr_cntl(c_addr_fifo_de...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_rddata_cntl [\axi_sg_rddata_cntl(c_align_widt...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_mm2s_basic_wrap [\axi_sg_mm2s_basic_wrap(c_mm2s_a...]
+Compiling architecture imp of entity axi_sg_v4_1_21.srl_fifo [\srl_fifo(c_dwidth=7,c_depth=3)\]
+Compiling architecture imp of entity axi_sg_v4_1_21.axi_sg_fifo [\axi_sg_fifo(c_dwidth=7,c_depth=...]
+Compiling architecture imp of entity axi_sg_v4_1_21.srl_fifo [\srl_fifo(c_dwidth=2,c_depth=3)\]
+Compiling architecture imp of entity axi_sg_v4_1_21.axi_sg_fifo [\axi_sg_fifo(c_dwidth=2,c_depth=...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_wr_status_cntl [\axi_sg_wr_status_cntl(c_sts_fif...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_scc_wr [\axi_sg_scc_wr(c_sel_addr_width=...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_addr_cntl [\axi_sg_addr_cntl(c_addr_fifo_de...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_wrdata_cntl [\axi_sg_wrdata_cntl(c_sel_addr_w...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_s2mm_basic_wrap [\axi_sg_s2mm_basic_wrap(c_s2mm_a...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg_datamover [\axi_sg_datamover(c_m_axi_mm2s_a...]
+Compiling architecture implementation of entity axi_sg_v4_1_21.axi_sg [\axi_sg(c_m_axi_sg_addr_width=64...]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_mm2s_sm [\axi_dma_mm2s_sm(c_m_axi_mm2s_ad...]
+Compiling module xpm.xpm_fifo_rst_default
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=5...
+Compiling module xpm.xpm_counter_updn
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(FIFO_MEMORY_TYPE=1...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_mm2s_sg_if [\axi_dma_mm2s_sg_if(c_sg_include...]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_mm2s_cmdsts_if [\axi_dma_mm2s_cmdsts_if(c_m_axi_...]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_mm2s_sts_mngr [axi_dma_mm2s_sts_mngr_default]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_mm2s_mngr [\axi_dma_mm2s_mngr(c_prmy_cmdfif...]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_sofeof_gen [axi_dma_sofeof_gen_default]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_s2mm_sm [\axi_dma_s2mm_sm(c_m_axi_s2mm_ad...]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_s2mm_sg_if [\axi_dma_s2mm_sg_if(c_sg_include...]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_s2mm_cmdsts_if [\axi_dma_s2mm_cmdsts_if(c_m_axi_...]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_s2mm_sts_mngr [axi_dma_s2mm_sts_mngr_default]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_s2mm_mngr [\axi_dma_s2mm_mngr(c_prmy_cmdfif...]
+Compiling module xpm.xpm_cdc_single(DEST_SYNC_FF=4,IN...
+Compiling module xpm.xpm_cdc_sync_rst(DEST_SYNC_FF=4,...
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_reset [\axi_dma_reset(c_sg_include_stsc...]
+Compiling module xpm.xpm_cdc_sync_rst(DEST_SYNC_FF=4,...
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_rst_module [\axi_dma_rst_module(c_sg_include...]
+Compiling module xpm.xpm_cdc_array_single(DEST_SYNC_F...
+Compiling module xpm.xpm_cdc_array_single(DEST_SYNC_F...
+Compiling module xpm.xpm_cdc_array_single(DEST_SYNC_F...
+Compiling module xpm.xpm_cdc_array_single(DEST_SYNC_F...
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_lite_if [\axi_dma_lite_if(c_num_ce=23,c_a...]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_register [\axi_dma_register(c_num_register...]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_register_s2mm [\axi_dma_register_s2mm(c_num_reg...]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma_reg_module [\axi_dma_reg_module(c_sg_length_...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=8,c_depth=4)\]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=8,c...]
+Compiling module xpm.xpm_fifo_rst_default_1
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_fifo_base(FIFO_MEMORY_TYPE=2...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_sfifo_autord [\axi_datamover_sfifo_autord(c_dw...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_rd_sf [\axi_datamover_rd_sf(c_sf_fifo_d...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_skid_buf [\axi_datamover_skid_buf(c_wdata_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_reset [axi_datamover_reset_default]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=8,c...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=103...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_cmd_status [\axi_datamover_cmd_status(c_addr...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_rd_status_cntl [axi_datamover_rd_status_cntl_def...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(c_strb_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(c_op_mo...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_pcc [\axi_datamover_pcc(c_is_mm2s=1,c...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=91,c_depth=4)...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=91,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(c_addr_...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=55,c_depth=4)...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=55,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_rdmux [\axi_datamover_rdmux(c_sel_addr_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_rddata_cntl [\axi_datamover_rddata_cntl(c_ali...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_mm2s_full_wrap [\axi_datamover_mm2s_full_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_ibttcc [\axi_datamover_ibttcc(c_sf_xfer_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_ms_strb_set [\axi_datamover_ms_strb_set(c_str...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_mssai_skid_buf [\axi_datamover_mssai_skid_buf(c_...]
+Compiling architecture working of entity axi_datamover_v5_1_37.axi_datamover_slice [\axi_datamover_slice(c_data_widt...]
+Compiling module xpm.xpm_fifo_rst_default_2
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=1...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_sfifo_autord [\axi_datamover_sfifo_autord(c_dw...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=23,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_s2mm_scatter [\axi_datamover_s2mm_scatter(c_en...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=37,c_depth=4)...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=37,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_s2mm_realign [\axi_datamover_s2mm_realign(c_en...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_stbs_set_nodre [\axi_datamover_stbs_set_nodre(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_skid_buf [\axi_datamover_skid_buf(c_wdata_...]
+Compiling module xpm.xpm_fifo_rst_default_3
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=1...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_sfifo_autord [\axi_datamover_sfifo_autord(c_dw...]
+Compiling module xpm.xpm_fifo_rst_default_4
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_fifo_base(FIFO_MEMORY_TYPE=2...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_sfifo_autord [\axi_datamover_sfifo_autord(c_dw...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_indet_btt [\axi_datamover_indet_btt(c_sf_fi...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=35,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_cmd_status [\axi_datamover_cmd_status(c_addr...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=33,c_depth=6)...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=33,...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=2,c_depth=6)\]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=2,c...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_wr_status_cntl [\axi_datamover_wr_status_cntl(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(c_addr_...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=53,c_depth=4)...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=53,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_wrdata_cntl [\axi_datamover_wrdata_cntl(c_rea...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_wr_demux [\axi_datamover_wr_demux(c_sel_ad...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_skid2mm_buf [\axi_datamover_skid2mm_buf(c_mda...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_s2mm_full_wrap [\axi_datamover_s2mm_full_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover [\axi_datamover(c_include_mm2s=1,...]
+Compiling architecture implementation of entity axi_dma_v7_1_36.axi_dma [\axi_dma(c_sg_include_stscntrl_s...]
+Compiling architecture ror_design_axi_dma_0_0_arch of entity xil_defaultlib.ROR_design_axi_dma_0_0 [ror_design_axi_dma_0_0_default]
+Compiling module xlconstant_v1_1_10.xlconstant_v1_1_10_xlconstant
+Compiling module xil_defaultlib.bd_c225_one_0
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture bd_c225_psr_aclk_0_arch of entity xil_defaultlib.bd_c225_psr_aclk_0 [bd_c225_psr_aclk_0_default]
+Compiling module xil_defaultlib.clk_map_imp_17UPZY3
+Compiling module xpm.xpm_cdc_async_rst(DEST_SYNC_FF=3...
+Compiling module xil_defaultlib.bd_c225_m00e_0
+Compiling module xil_defaultlib.m00_exit_pipeline_imp_SH8N34
+Compiling module xil_defaultlib.bd_c225_m00s2a_0
+Compiling module xil_defaultlib.bd_c225_s00a2s_0
+Compiling module xil_defaultlib.bd_c225_s00mmu_0
+Compiling module xil_defaultlib.bd_c225_s00sic_0
+Compiling module xil_defaultlib.bd_c225_s00tr_0
+Compiling module xil_defaultlib.s00_entry_pipeline_imp_1ROT2W3
+Compiling module xil_defaultlib.bd_c225_sarn_0
+Compiling module xil_defaultlib.bd_c225_sawn_0
+Compiling module xil_defaultlib.bd_c225_sbn_0
+Compiling module xil_defaultlib.bd_c225_srn_0
+Compiling module xil_defaultlib.bd_c225_swn_0
+Compiling module xil_defaultlib.s00_nodes_imp_1UNARY1
+Compiling module xil_defaultlib.bd_c225
+Compiling module xil_defaultlib.ROR_design_axi_smc_0
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_g...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_g...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_f...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_s...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_i...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_s...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_d...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_o...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_o...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_r...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_r...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_21.axi_vip_v1_1_21_top(C_AXI_PROTOC...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_21.axi_vip_v1_1_21_top(C_AXI_PROTOC...
+WARNING: [VRFC 10-3705] select index 64 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6134]
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module xilinx_vip.axi_vip_axi4pc(PROTOCOL=1,RID_WI...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_21.axi_vip_v1_1_21_top(C_AXI_PROTOC...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_i...
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10898]
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module xilinx_vip.axi_vip_axi4pc(PROTOCOL=1,RID_WI...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_21.axi_vip_v1_1_21_top(C_AXI_PROTOC...
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7772]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7985]
+WARNING: [VRFC 10-3705] select index 4 into 'ar_cnt' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8124]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_rresp_cnt' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8221]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_wr_ptr' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8240]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_cnt' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8381]
+WARNING: [VRFC 10-3705] select index 4 into 'rresp_time_cnt' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8386]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2025.1/sw/continuous/3882/output/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8391]
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23_a...
+Compiling module processing_system7_vip_v1_0_23.processing_system7_vip_v1_0_23(C...
+Compiling module xil_defaultlib.ROR_design_processing_system7_0_...
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture ror_design_rst_ps7_0_100m_0_arch of entity xil_defaultlib.ROR_design_rst_ps7_0_100M_0 [ror_design_rst_ps7_0_100m_0_defa...]
+Compiling module xil_defaultlib.bd_3b23_one_0
+Compiling architecture bd_3b23_psr_aclk_0_arch of entity xil_defaultlib.bd_3b23_psr_aclk_0 [bd_3b23_psr_aclk_0_default]
+Compiling module xil_defaultlib.clk_map_imp_1LYBY8S
+Compiling module xil_defaultlib.bd_3b23_m00e_0
+Compiling module xil_defaultlib.m00_exit_pipeline_imp_B7YUVB
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=32...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=61...
+Compiling module xil_defaultlib.bd_3b23_m00arn_0
+Compiling module xil_defaultlib.bd_3b23_m00awn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=64...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=25...
+Compiling module xil_defaultlib.bd_3b23_m00bn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=48...
+Compiling module xil_defaultlib.bd_3b23_m00rn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=4,...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=57...
+Compiling module xil_defaultlib.bd_3b23_m00wn_0
+Compiling module xil_defaultlib.m00_nodes_imp_XDB08B
+Compiling module xil_defaultlib.bd_3b23_m00s2a_0
+Compiling module xil_defaultlib.bd_3b23_s00a2s_0
+Compiling module xil_defaultlib.bd_3b23_s00mmu_0
+Compiling module xil_defaultlib.bd_3b23_s00sic_0
+Compiling module xil_defaultlib.bd_3b23_s00tr_0
+Compiling module xil_defaultlib.s00_entry_pipeline_imp_1BJJ2RO
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=57...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=55...
+Compiling module xil_defaultlib.bd_3b23_sarn_0
+Compiling module xil_defaultlib.bd_3b23_sawn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=83...
+Compiling module xil_defaultlib.bd_3b23_sbn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=54...
+Compiling module xil_defaultlib.bd_3b23_srn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=51...
+Compiling module xil_defaultlib.bd_3b23_swn_0
+Compiling module xil_defaultlib.s00_nodes_imp_1GYO7OE
+Compiling module xil_defaultlib.bd_3b23_s01a2s_0
+Compiling module xil_defaultlib.bd_3b23_s01mmu_0
+Compiling module xil_defaultlib.bd_3b23_s01sic_0
+Compiling module xil_defaultlib.bd_3b23_s01tr_0
+Compiling module xil_defaultlib.s01_entry_pipeline_imp_DD5B80
+Compiling module xil_defaultlib.bd_3b23_sarn_1
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=53...
+Compiling module xil_defaultlib.bd_3b23_srn_1
+Compiling module xil_defaultlib.s01_nodes_imp_9YW6NC
+Compiling module xil_defaultlib.bd_3b23_s02a2s_0
+Compiling module xil_defaultlib.bd_3b23_s02mmu_0
+Compiling module xil_defaultlib.bd_3b23_s02sic_0
+Compiling module xil_defaultlib.bd_3b23_s02tr_0
+Compiling module xil_defaultlib.s02_entry_pipeline_imp_JN9JXP
+Compiling module xil_defaultlib.bd_3b23_sawn_1
+Compiling module xil_defaultlib.bd_3b23_sbn_1
+Compiling module xil_defaultlib.bd_3b23_swn_1
+Compiling module xil_defaultlib.s02_nodes_imp_QIIIYB
+Compiling module xil_defaultlib.bd_3b23_arsw_0
+Compiling module xil_defaultlib.bd_3b23_awsw_0
+Compiling module xil_defaultlib.bd_3b23_bsw_0
+Compiling module xil_defaultlib.bd_3b23_rsw_0
+Compiling module xil_defaultlib.bd_3b23_wsw_0
+Compiling module xil_defaultlib.switchboards_imp_1N4GYQ2
+Compiling module xil_defaultlib.bd_3b23
+Compiling module xil_defaultlib.ROR_design_smartconnect_0_0
+Compiling module xlconcat_v2_1_7.xlconcat_v2_1_7_xlconcat_default
+Compiling module xil_defaultlib.ROR_design_xlconcat_0_0
+Compiling module xil_defaultlib.ROR_design
+Compiling module xil_defaultlib.ROR_design_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ROR_design_wrapper_behav

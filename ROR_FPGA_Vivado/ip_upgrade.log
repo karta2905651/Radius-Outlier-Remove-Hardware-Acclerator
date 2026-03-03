@@ -1,0 +1,190 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Thu Nov 20 21:52:02 2025
+| Host         : DESKTOP-MR436SK running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ROR_design_ROR_IP_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the update of ROR_design_ROR_IP_0_2 (xilinx.com:user:ROR_IP:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Thu Nov 20 21:51:54 2025
+| Host         : DESKTOP-MR436SK running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ROR_IP_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of ROR_IP_0 (xilinx.com:user:ROR_IP:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Tue Nov 18 22:14:47 2025
+| Host         : DESKTOP-MR436SK running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ROR_design_ROR_IP_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the update of ROR_design_ROR_IP_0_2 (xilinx.com:user:ROR_IP:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Tue Nov 18 22:14:42 2025
+| Host         : DESKTOP-MR436SK running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ROR_IP_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of ROR_IP_0 (xilinx.com:user:ROR_IP:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Tue Nov 18 21:47:38 2025
+| Host         : DESKTOP-MR436SK running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ROR_IP_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of ROR_IP_0 (xilinx.com:user:ROR_IP:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'ROR_IP_0'. These changes may impact your design.
+
+
+-Upgraded port 'm00_axis_tdata' width 128 differs from original width 32
+
+-Upgraded port 'm00_axis_tstrb' width 16 differs from original width 4
+
+-Upgraded port 's00_axis_tdata' width 128 differs from original width 32
+
+-Upgraded port 's00_axis_tstrb' width 16 differs from original width 4
+
+
+3. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'C_S00_AXIS_TDATA_WIDTH' from '128' to '32' has been ignored for IP 'ROR_IP_0'
+
+An attempt to modify the value of disabled parameter 'C_M00_AXIS_TDATA_WIDTH' from '128' to '32' has been ignored for IP 'ROR_IP_0'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:ROR_IP:1.0 -user_name ROR_IP_0
+set_property -dict "\
+  CONFIG.C_M00_AXIS_START_COUNT {32} \
+  CONFIG.C_M00_AXIS_TDATA_WIDTH {32} \
+  CONFIG.C_S00_AXIS_TDATA_WIDTH {32} \
+  CONFIG.Component_Name {ROR_IP_0} \
+  CONFIG.M00_AXIS.CLK_DOMAIN {} \
+  CONFIG.M00_AXIS.FREQ_HZ {100000000} \
+  CONFIG.M00_AXIS.HAS_TKEEP {0} \
+  CONFIG.M00_AXIS.HAS_TLAST {1} \
+  CONFIG.M00_AXIS.HAS_TREADY {1} \
+  CONFIG.M00_AXIS.HAS_TSTRB {1} \
+  CONFIG.M00_AXIS.INSERT_VIP {0} \
+  CONFIG.M00_AXIS.LAYERED_METADATA {undef} \
+  CONFIG.M00_AXIS.PHASE {0.0} \
+  CONFIG.M00_AXIS.TDATA_NUM_BYTES {4} \
+  CONFIG.M00_AXIS.TDEST_WIDTH {0} \
+  CONFIG.M00_AXIS.TID_WIDTH {0} \
+  CONFIG.M00_AXIS.TUSER_WIDTH {0} \
+  CONFIG.M00_AXIS.WIZ_DATA_WIDTH {32} \
+  CONFIG.M00_AXIS_CLK.ASSOCIATED_BUSIF {M00_AXIS} \
+  CONFIG.M00_AXIS_CLK.ASSOCIATED_PORT {} \
+  CONFIG.M00_AXIS_CLK.ASSOCIATED_RESET {m00_axis_aresetn} \
+  CONFIG.M00_AXIS_CLK.CLK_DOMAIN {} \
+  CONFIG.M00_AXIS_CLK.FREQ_HZ {100000000} \
+  CONFIG.M00_AXIS_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.M00_AXIS_CLK.INSERT_VIP {0} \
+  CONFIG.M00_AXIS_CLK.PHASE {0.0} \
+  CONFIG.M00_AXIS_RST.INSERT_VIP {0} \
+  CONFIG.M00_AXIS_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.S00_AXIS.CLK_DOMAIN {} \
+  CONFIG.S00_AXIS.FREQ_HZ {100000000} \
+  CONFIG.S00_AXIS.HAS_TKEEP {0} \
+  CONFIG.S00_AXIS.HAS_TLAST {1} \
+  CONFIG.S00_AXIS.HAS_TREADY {1} \
+  CONFIG.S00_AXIS.HAS_TSTRB {1} \
+  CONFIG.S00_AXIS.INSERT_VIP {0} \
+  CONFIG.S00_AXIS.LAYERED_METADATA {undef} \
+  CONFIG.S00_AXIS.PHASE {0.0} \
+  CONFIG.S00_AXIS.TDATA_NUM_BYTES {4} \
+  CONFIG.S00_AXIS.TDEST_WIDTH {0} \
+  CONFIG.S00_AXIS.TID_WIDTH {0} \
+  CONFIG.S00_AXIS.TUSER_WIDTH {0} \
+  CONFIG.S00_AXIS.WIZ_DATA_WIDTH {32} \
+  CONFIG.S00_AXIS_CLK.ASSOCIATED_BUSIF {S00_AXIS} \
+  CONFIG.S00_AXIS_CLK.ASSOCIATED_PORT {} \
+  CONFIG.S00_AXIS_CLK.ASSOCIATED_RESET {s00_axis_aresetn} \
+  CONFIG.S00_AXIS_CLK.CLK_DOMAIN {} \
+  CONFIG.S00_AXIS_CLK.FREQ_HZ {100000000} \
+  CONFIG.S00_AXIS_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.S00_AXIS_CLK.INSERT_VIP {0} \
+  CONFIG.S00_AXIS_CLK.PHASE {0.0} \
+  CONFIG.S00_AXIS_RST.INSERT_VIP {0} \
+  CONFIG.S00_AXIS_RST.POLARITY {ACTIVE_LOW} " [get_ips ROR_IP_0]
+
+

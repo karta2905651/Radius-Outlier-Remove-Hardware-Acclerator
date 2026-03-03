@@ -1,0 +1,1648 @@
+
+*** Running vivado
+    with args -log ROR_design_ROR_IP_0_4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROR_design_ROR_IP_0_4.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Wed Feb 11 23:53:18 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source ROR_design_ROR_IP_0_4.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 519.859 ; gain = 211.914
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/karta/ip_repo/ROR_IP_1_0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/karta/ip_repo/ROR_IP_1_0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/karta/ip_repo/ROR_IP_1_0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/karta/ip_repo/ROR_IP_1_0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/karta/ip_repo/ROR_IP_1_0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/karta/ip_repo/ROR_IP_1_0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/karta/ip_repo/ROR_IP_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top ROR_design_ROR_IP_0_4 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10400
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1254.711 ; gain = 491.430
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6901] identifier 'data_buf' is used before its declaration [C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.srcs/sources_1/new/ROR_IP.v:71]
+INFO: [Synth 8-6157] synthesizing module 'ROR_design_ROR_IP_0_4' [c:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.gen/sources_1/bd/ROR_design/ip/ROR_design_ROR_IP_0_4/synth/ROR_design_ROR_IP_0_4.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ROR_IP' [C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.srcs/sources_1/new/ROR_IP.v:4]
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.srcs/sources_1/new/ROR_IP.v:153]
+INFO: [Synth 8-226] default block is never used [C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.srcs/sources_1/new/ROR_IP.v:197]
+INFO: [Synth 8-6157] synthesizing module 'DN' [C:/Users/karta/桌面/ROR_Unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Distance_cal_cell' [C:/Users/karta/桌面/ROR_Unit.v:636]
+INFO: [Synth 8-6155] done synthesizing module 'Distance_cal_cell' (0#1) [C:/Users/karta/桌面/ROR_Unit.v:636]
+INFO: [Synth 8-6155] done synthesizing module 'DN' (0#1) [C:/Users/karta/桌面/ROR_Unit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ROR_IP' (0#1) [C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.srcs/sources_1/new/ROR_IP.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ROR_design_ROR_IP_0_4' (0#1) [c:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.gen/sources_1/bd/ROR_design/ip/ROR_design_ROR_IP_0_4/synth/ROR_design_ROR_IP_0_4.v:53]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst'. This will prevent further optimization [c:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.gen/sources_1/bd/ROR_design/ip/ROR_design_ROR_IP_0_4/synth/ROR_design_ROR_IP_0_4.v:120]
+WARNING: [Synth 8-7129] Port pcd_data[31] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[30] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[29] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[28] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[27] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[26] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[25] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[24] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[23] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[22] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[21] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[20] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[19] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[18] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[17] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[16] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[15] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[14] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[13] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[12] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[11] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[10] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[9] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[8] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[7] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[6] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[5] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[4] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[3] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[2] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[1] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[0] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[15] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[14] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[13] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[12] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[11] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[10] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[9] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[8] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[7] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[6] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[5] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[4] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[3] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[2] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[1] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[0] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aclk in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aresetn in module ROR_IP is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1391.074 ; gain = 627.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1391.074 ; gain = 627.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1391.074 ; gain = 627.793
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1391.074 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1443.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1446.348 ; gain = 2.969
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1446.348 ; gain = 683.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1446.348 ; gain = 683.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1446.348 ; gain = 683.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'DN'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                cur_init |                             1000 |                               00
+                cal_init |                             0010 |                               01
+                 calcute |                             0100 |                               10
+           access_memory |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'DN'
+WARNING: [Synth 8-6841] Block RAM (ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1446.348 ; gain = 683.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   64 Bit       Adders := 16    
+	   3 Input   32 Bit       Adders := 48    
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 5     
+	   2 Input    5 Bit       Adders := 16    
++---Registers : 
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 51    
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 4     
+	                5 Bit    Registers := 16    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	              32x32  Multipliers := 48    
++---RAMs : 
+	            2048K Bit	(16384 X 128 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 32    
+	   2 Input   32 Bit        Muxes := 57    
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 9     
+	   4 Input   14 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 32    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 58    
+	   4 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP y_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: operator y_mul is absorbed into DSP y_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP z_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: operator z_mul is absorbed into DSP z_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: Generating DSP x_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+DSP Report: operator x_mul is absorbed into DSP x_mul.
+WARNING: [Synth 8-7129] Port pcd_data[31] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[30] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[29] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[28] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[27] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[26] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[25] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[24] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[23] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[22] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[21] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[20] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[19] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[18] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[17] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[16] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[15] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[14] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[13] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[12] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[11] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[10] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[9] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[8] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[7] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[6] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[5] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[4] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[3] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[2] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[1] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcd_data[0] in module DN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[15] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[14] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[13] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[12] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[11] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[10] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[9] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[8] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[7] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[6] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[5] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[4] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[3] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[2] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[1] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[0] in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aclk in module ROR_IP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aresetn in module ROR_IP is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6841] Block RAM (ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1526.152 ; gain = 762.871
+---------------------------------------------------------------------------------
+ Sort Area is  x_mul_0 : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  x_mul_0 : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  y_mul_8 : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  y_mul_8 : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  z_mul_6 : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  z_mul_6 : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  x_mul_12 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_12 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_18 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_18 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_1e : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_1e : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_24 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_24 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_2a : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_2a : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_30 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_30 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_36 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_36 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_3c : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_3c : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_42 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_42 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_48 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_48 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_4e : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_4e : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_54 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_54 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_5a : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_5a : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_60 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_60 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_a : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  x_mul_a : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_10 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_10 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_16 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_16 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_1c : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_1c : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_22 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_22 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_28 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_28 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_2e : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_2e : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_34 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_34 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_3a : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_3a : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_40 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_40 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_46 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_46 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_4c : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_4c : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_52 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_52 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_58 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_58 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_5e : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_5e : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  y_mul_64 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  y_mul_64 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_14 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_14 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_1a : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_1a : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_20 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_20 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_26 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_26 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_2c : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_2c : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_32 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_32 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_38 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_38 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_3e : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_3e : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_44 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_44 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_4a : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_4a : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_50 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_50 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_56 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_56 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_5c : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_5c : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_62 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_62 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  z_mul_e : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  z_mul_e : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  x_mul_3 : 0 0 : 2634 5119 : Used 1 time 0
+ Sort Area is  x_mul_3 : 0 1 : 2485 5119 : Used 1 time 0
+ Sort Area is  y_mul_9 : 0 0 : 2634 5119 : Used 1 time 0
+ Sort Area is  y_mul_9 : 0 1 : 2485 5119 : Used 1 time 0
+ Sort Area is  z_mul_7 : 0 0 : 2634 5119 : Used 1 time 0
+ Sort Area is  z_mul_7 : 0 1 : 2485 5119 : Used 1 time 0
+ Sort Area is  x_mul_13 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_13 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_19 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_19 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_1f : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_1f : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_25 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_25 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_2b : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_2b : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_31 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_31 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_37 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_37 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_3d : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_3d : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_43 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_43 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_49 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_49 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_4f : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_4f : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_55 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_55 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_5b : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_5b : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_61 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_61 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  x_mul_c : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  x_mul_c : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_11 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_11 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_17 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_17 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_1d : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_1d : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_23 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_23 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_29 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_29 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_2f : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_2f : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_35 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_35 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_3b : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_3b : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_41 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_41 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_47 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_47 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_4d : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_4d : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_53 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_53 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_59 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_59 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_5f : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_5f : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  y_mul_65 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  y_mul_65 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_15 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_15 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_1b : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_1b : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_21 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_21 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_27 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_27 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_2d : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_2d : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_33 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_33 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_39 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_39 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_3f : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_3f : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_45 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_45 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_4b : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_4b : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_51 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_51 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_57 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_57 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_5d : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_5d : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_63 : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_63 : 0 1 : 1800 4434 : Used 1 time 0
+ Sort Area is  z_mul_f : 0 0 : 2634 4434 : Used 1 time 0
+ Sort Area is  z_mul_f : 0 1 : 1800 4434 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|inst        | ram_reg    | 16 K x 128(READ_FIRST) | W |   | 16 K x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
++------------+------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1648.430 ; gain = 885.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1679.477 ; gain = 916.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|inst        | ram_reg    | 16 K x 128(READ_FIRST) | W |   | 16 K x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
++------------+------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_4_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_4_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_4_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_4_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_5_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_5_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_5_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_5_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_6_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_6_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_6_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_6_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_7_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_7_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_7_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_7_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_8_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_8_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_8_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_8_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_9_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_9_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_9_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_9_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_10_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_10_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_10_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_10_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_11_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_11_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_11_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_11_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_12_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_12_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_12_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_12_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_13_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_13_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_13_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_13_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_14_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_14_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_14_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_14_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_15_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_15_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_15_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ram_reg_15_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1712.742 ; gain = 949.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1900.930 ; gain = 1137.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1900.930 ; gain = 1137.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1900.930 ; gain = 1137.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1900.930 ; gain = 1137.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1909.402 ; gain = 1146.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1909.402 ; gain = 1146.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Distance_cal_cell | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |  1380|
+|2     |DSP48E1  |   192|
+|3     |LUT1     |   219|
+|4     |LUT2     |  5992|
+|5     |LUT3     |  1164|
+|6     |LUT4     |  1238|
+|7     |LUT5     |   128|
+|8     |LUT6     |    95|
+|9     |RAMB36E1 |    64|
+|10    |FDCE     |  1761|
+|11    |FDPE     |     1|
+|12    |FDRE     |   189|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1909.402 ; gain = 1146.121
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 53 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1909.402 ; gain = 1090.848
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1909.402 ; gain = 1146.121
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 1909.402 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1636 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 128 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1923.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c340494e
+INFO: [Common 17-83] Releasing license: Synthesis
+99 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1923.191 ; gain = 1384.574
+INFO: [Coretcl 2-1174] Renamed 18 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1923.191 ; gain = 0.000
+[libprotobuf ERROR C:\protobuf-3.21.12\protobuf\src\google\protobuf\wire_format_lite.cc:618] String field 'HDMetricDBGroup.MetricMapEntry.value' contains invalid UTF-8 data when serializing a protocol buffer. Use the 'bytes' type if you intend to send raw bytes. 
+INFO: [Common 17-1381] The checkpoint 'C:/Users/karta/ROR_FPGA_1/ROR_FPGA_1.runs/ROR_design_ROR_IP_0_4_synth_1/ROR_design_ROR_IP_0_4.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ROR_design_ROR_IP_0_4_utilization_synth.rpt -pb ROR_design_ROR_IP_0_4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 11 23:54:12 2026...
