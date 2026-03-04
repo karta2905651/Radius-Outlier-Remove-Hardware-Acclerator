@@ -9,7 +9,7 @@
 <img width="1189" height="466" alt="image" src="https://github.com/user-attachments/assets/b305f05d-e8d7-4319-98aa-b355700ad669" />
 <br>
 
-###  設計流程 :
+###  演算法 :
 
 
 
