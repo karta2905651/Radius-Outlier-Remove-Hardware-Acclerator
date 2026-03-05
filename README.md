@@ -70,3 +70,10 @@ ROR 的濾波強度由以下兩個關鍵參數決定：
 ### 軟硬體整合 (Co-Design) :
 
 
+
+## 成果展示 (Demo Video)
+<p align="center">
+  <video src="https://path-to-your-video/demo.mp4" width="800px" controls>
+    您的瀏覽器不支援影片播放。
+  </video>
+</p>
