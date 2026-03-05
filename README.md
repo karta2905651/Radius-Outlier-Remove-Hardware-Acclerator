@@ -52,10 +52,12 @@ ROR 的濾波強度由以下兩個關鍵參數決定：
   <b>Block Diaogram</b>
 </p>
 
-### ROR加速IP ( Hardware Accelerator ):
+### ROR 硬體加速器 (ROR Hardware Accelerator) :
+* **運算核心 ( PE )**：使用 **Verilog HDL** 根據三維歐幾里德距離公式開發運算單元，作為點雲資料的距離計算與鄰近點計數邏輯。為了節省硬體資源與運算速度，設計中省略開根號改為後續直接與閥值平方做比較，公式如下 : $$d^2 = (x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2 \le \epsilon^2$$
+* **並行化架構**：導入 PE 並行架構，實現多個點同步進行距離運算與鄰近點計數邏輯，大幅提升點雲資料處理效率。
 
+<img width="986" height="480" alt="Diagram1" src="https://github.com/user-attachments/assets/f64fa57b-23e8-446a-9f58-7c4a77f8fa1d" />
 
-<img width="985" height="489" alt="Diagram" src="https://github.com/user-attachments/assets/22ee6787-0de9-4e4e-b3f7-ec4ca154687d" />
 
 
 
