@@ -30,8 +30,8 @@ ROR 的濾波強度由以下兩個關鍵參數決定：
 1. **距離計算**：計算 $p$ 其餘點 $q$ 的歐氏距離。
 2. **條件判定**： 若在以 $p$ 為中心、半徑為 $ε$ 的範圍內，鄰近點數量 $MinPts$ 滿足： $$N_{ε}(p) < MinPts$$ ，則該點 $p$ 被標記為 **離群雜訊 (Outlier)** 並予以移除；否則保留為有效點。
 
-<img width="1062" height="510" alt="image" src="https://github.com/user-attachments/assets/06d6642d-7d58-4cf5-be67-fdf807d4b13b" />
 <br>
+<img width="1062" height="510" alt="image" src="https://github.com/user-attachments/assets/06d6642d-7d58-4cf5-be67-fdf807d4b13b" />
 <p align="center">
   <b>ROR algorithm</b>
 </p>
