@@ -69,7 +69,28 @@ ROR 的濾波強度由以下兩個關鍵參數決定：
 
 ## 軟硬體整合 (Co-Design) :
 
-
+<table border="0">
+  <tr>
+    <td width="65%" valign="top">
+      <img src="https://github.com/user-attachments/assets/f64fa57b-23e8-446a-9f58-7c4a77f8fa1d" alt="ROR Accelerator Diagram" width="100%">
+      <p align="center"><b>ROR Accelerator Diagram</b></p>
+    </td>
+    <td width="35%" valign="top">
+      <h4>1. ROR 運算單元 (ROR UNIT)</h4>
+      <ul>
+        <li><b>運算元件 (PE)</b>：使用 <b>Verilog HDL</b> 實作。為了節省硬體資源，採用平方比較法優化：<br>
+            $$d^2 = (x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2 \le \epsilon^2$$
+        </li>
+        <li><b>並行化架構</b>：導入多組 PE 並行運算，同步進行距離運算與鄰近點計數，大幅提升處理效率。</li>
+      </ul>
+      <h4>2. 記憶體層級設計 (Memory Hierarchy)</h4>
+      <ul>
+        <li><b>BRAM 快取</b>：利用 <b>Block RAM (BRAM)</b> 暫存點雲子集，減少對外部 DDR 的存取延遲。</li>
+        <li><b>True Dual-Port 架構</b>：支援同步讀寫存取，提升資料吞吐量。</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ## 成果展示 (Demo Video)
 <p align="center">
