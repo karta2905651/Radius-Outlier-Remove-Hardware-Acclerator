@@ -67,13 +67,15 @@ ROR 的濾波強度由以下兩個關鍵參數決定：
   <b>ROR Accelerator Diaogram</b>
 </p>
 
-### 軟硬體整合 (Co-Design) :
+## 軟硬體整合 (Co-Design) :
 
 
 
 ## 成果展示 (Demo Video)
 <p align="center">
-  <video src="https://path-to-your-video/demo.mp4" width="800px" controls>
-    您的瀏覽器不支援影片播放。
-  </video>
+  <a href="https://www.youtube.com/watch?v=sfzBos3J_24">
+    <img src="https://img.youtube.com/vi/sfzBos3J_24/maxresdefault.jpg" width="800px" alt="Point Cloud ROR Accelerator Demo">
+    <br>
+    <b>點擊上方圖片觀看：Point Cloud ROR Accelerator 實機演示</b>
+  </a>
 </p>
