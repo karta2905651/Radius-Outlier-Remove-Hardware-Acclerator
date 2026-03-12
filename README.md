@@ -120,6 +120,16 @@ ROR 的濾波強度由以下兩個關鍵參數決定：
   </tr>
 </table>
 
+<br> 
+ROR-Delete Application 負責的部分在於讀取點雲檔並解析 Header 取得每個點的座標資訊，由於座標值是以浮點數的型式表示，因此需先將浮點數轉換為 Q16.16定點數（Fixed-point）再將座標放入緩衝區以便傳送至加速器端中的快取。接著在硬體處理完點雲後，以輸出的布林值來表示點雲是否為有效點，以此為判斷是否要將此點座標寫入新的輸出點雲檔中，來達成點雲過濾的效果，如下圖表示
+
+<br>
+
+<img width="999" height="556" alt="image" src="https://github.com/user-attachments/assets/a6094ef5-9658-4ee0-927c-64a9a12f74d2" />
+<p align="center">
+  <b>Data Flow 示意</b>
+</p>
+<br>
 
 ## 成果展示 (Demo Video)
 <p align="center">
