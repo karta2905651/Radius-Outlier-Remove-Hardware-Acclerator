@@ -94,6 +94,33 @@ ROR 的濾波強度由以下兩個關鍵參數決定：
 
 <br>
 
+### ROR-Delete (Application Framwork)
+
+<table border="0">
+  <tr>
+    <td width="55%" align="center" valign="middle">
+      <p style="text-align: center; margin-bottom: 12px;">
+        <b>Point Cloud Data file format</b>
+      </p>  
+      <img src="https://github.com/user-attachments/assets/127f22bc-3579-4d33-8457-b4c6b908fa53" 
+           alt="Point Cloud Data file format" 
+           width="80%" 
+           style="display: block; margin: 0 auto;">
+    </td>
+    <td width="45%" valign="top">
+      <h4>1. Header (標頭檔) : </h4>
+        <ul>
+          Header 位於檔案的最上方，用來定義這份點雲的規格，普遍以 Binary 、 ASCII 文本格式儲存的。
+        </ul>
+        <h4>2. DMA Proxy Driver</h4>
+        <ul>
+          緊接在 Header 的 DATA 行後的是每個點的 (X,Y,Z) 位置資訊，以浮點數計載每個點的實際的座標資訊。
+        </ul>
+    </td>
+  </tr>
+</table>
+
+
 ## 成果展示 (Demo Video)
 <p align="center">
   <a href="https://www.youtube.com/watch?v=sfzBos3J_24">
