@@ -112,7 +112,7 @@ ROR 的濾波強度由以下兩個關鍵參數決定：
         <ul>
           Header 位於檔案的最上方，用來定義這份點雲的規格，普遍以 Binary 、 ASCII 文本格式儲存的。
         </ul>
-        <h4>2. Point Cloud Data</h4>
+        <h4>2. Point Cloud Data :</h4>
         <ul>
           緊接在 Header 的 DATA 行後的是每個點的 (X,Y,Z) 位置資訊，以浮點數計載每個點的實際的座標資訊。
         </ul>
