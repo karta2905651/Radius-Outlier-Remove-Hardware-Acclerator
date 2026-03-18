@@ -152,3 +152,4 @@ ROR 的濾波強度由以下兩個關鍵參數決定：
 * **定點數誤差比**：**1/11739** $\approx$ **0.0085%**
 
 
+<img width="802" height="262" alt="image" src="https://github.com/user-attachments/assets/6e20bcc2-22e4-4a2b-bbb2-1b300c960c6c" />
